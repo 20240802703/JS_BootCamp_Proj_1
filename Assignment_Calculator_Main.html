@@ -132,34 +132,34 @@
             let result;
             switch (operation) {
                 case "add":
-                        result= num1+num2
-                        break
-                    case "sub":
-                        result = num1-num2
-                        break
-                    case "mul":
-                        result= num1*num2
-                        break
-                    case "div":
-                        if (num2 != 0)
+                    result= num1+num2
+                    break
+                case "sub":
+                    result = num1-num2
+                    break
+                case "mul":
+                    result= num1*num2
+                    break
+                case "div":
+                    if (num2 != 0)
                         {
                             result = num1/num2
                         }
-                        else
+                    else
                         {
                             result = "Undefined"
                         }
-                        break
-                    case "mod":
-                        result = num1%num2
-                        break
-                    case "pow":
-                        result = num1**num2
-                        break
-                    default:
-                        result = "Invalid"
-                        console.log("Invalid operaation!!")
-                        break
+                    break
+                case "mod":
+                    result = num1%num2
+                    break
+                case "pow":
+                    result = num1**num2
+                    break
+                default:
+                    result = "Invalid"
+                    console.log("Invalid operaation!!")
+                    break
                 }
 
             if (typeof result === "number" && !Number.isInteger(result)) {
